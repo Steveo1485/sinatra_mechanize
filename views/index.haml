@@ -1,0 +1,23 @@
+!!!
+%html
+  %head
+    %title Scrapper Testing
+  %body
+    %h1 Scrapper Testing
+
+    %form.scrapper{method: "get", action: "/results"}
+      .form-section
+        %label{for: "terms"} Search Terms:
+        %input{type: "text", id: "terms", name: "terms"}
+
+      .form-section
+        %label{for: "postal_code"} Postal Code:
+        %input{type: "text", id: "postal_code", name: "postal_code"}
+
+      .form-selection
+        %label{for: "service"} Service:
+        %select{id: "service", name: "service"}
+          %option Gumtree
+
+      .form-section
+        %input{type: "submit"}

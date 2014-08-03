@@ -1,0 +1,11 @@
+!!!
+%html
+  %head
+    %title Scrapper Testing - Results
+  %body
+    %h1 Your Results
+
+    %ul
+      - @results.each do |result|
+        %li
+          %a{href: result[1]}= result[0]
