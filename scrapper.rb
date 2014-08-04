@@ -6,7 +6,6 @@ set :server, 'webrick'
 require_relative 'models/gumtree_scrapper'
 
 get '/' do
-  @test = "what"
   haml :index
 end
 
